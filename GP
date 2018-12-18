@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class StaticExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int T = scanner.nextInt();
+        int res = 0;
+        int x,y;
+        while (T > 0){
+            x = scanner.nextInt();
+            y = scanner.nextInt();
+            int n = scanner.nextInt();
+            int r = y / x;
+
+            while(n > 2){
+                res = y * r;
+                y = res;
+                n--;
+            }
+            System.out.println(res);
+               res = 0;
+               T--;
+        }
+    }
