@@ -19,6 +19,8 @@ public class StaticExample {
                    }
                }
                System.out.println(res);
+               int lcm = (x * y)/res;
+               System.out.println(lcm);
                res = 0;
                T--;
         }
